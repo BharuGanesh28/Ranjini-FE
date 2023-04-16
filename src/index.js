@@ -17,9 +17,9 @@ let theme = createTheme({
     },
     secondary: {
       light: '#0066ff',
-      main: '#009a09',
+      main: '#F14072',
       // dark: will be calculated from palette.secondary.main,
-      contrastText: '#ffcc00',
+      contrastText: '#fff',
     },
     // Provide every color token (light, main, dark, and contrastText) when using
     // custom colors for props in Material UI's components.
