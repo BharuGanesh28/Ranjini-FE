@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.portfolioimg{
+  object-fit: cover;
+  min-height: 450px;
+  max-height: 450px;
+  object-position: center top;
+  justify-content: space-evenly;
+  image-rendering: pixelated;
+  border-radius: 16px;
+  width: 100%;
+}
+.title{  
+  font-weight: 500;
+    color: #3A3A3A;
+    font-size: 25px;
+  
+}
