@@ -21,6 +21,31 @@ let theme = createTheme({
       // dark: will be calculated from palette.secondary.main,
       contrastText: '#fff',
     },
+    lightGreen :{ //Review start design
+      main: '#9acd32',
+      contrastText: '#fff',
+    },
+    review1:{
+      main:"#CB202D",
+      contrastText: '#fff'
+    },
+    review2:{
+      main:"#FF7800",
+      contrastText: '#fff'
+    },
+    review3:{
+      main:"#FFBA00",
+      contrastText: '#fff'
+    },
+    review4:{
+      main:"#9ACD32",
+      contrastText: '#fff'
+    },
+    review5:{
+      main:"#5BA829",
+      contrastText: '#fff'
+    },
+
     // Provide every color token (light, main, dark, and contrastText) when using
     // custom colors for props in Material UI's components.
     // Then you will be able to use it like this: `<Button color="custom">`

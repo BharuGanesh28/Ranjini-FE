@@ -42,7 +42,6 @@ function ResponsiveAppBar(props) {
     setAnchorElNav(null);
   };
   const theme = useTheme();
-  console.log(theme)
   const container = window !== undefined ? () => window().document.body : undefined;
 
   const drawer = (
