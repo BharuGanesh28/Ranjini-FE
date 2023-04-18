@@ -10,12 +10,12 @@ const prices = [
 const Pricing = () => {
   return (
     <Grid container style={{ backgroundColor: "#f140721f" }}>
-      <Grid container style={{ display: "flex", justifyContent: "center" }}>
+      <Grid container style={{ display: "flex", justifyContent: "center" }} sx={{color:"secondary.main"}}>
         <span
           style={{
             fontFamily: "Kaushan Script",
             fontSize: "48px",
-            color: "#fb336b",
+            
             marginTop: "80px",
           }}
         >
