@@ -10,8 +10,8 @@ const About =()=>{
                 <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg' />
             </Grid>
             <Grid item xs={12} md={5} sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} style={{textAlign:"center",height:"175px",margin:"75px 25px",flexDirection:"column",justifyContent:"center"}}>
-                <Grid container style={{justifyContent: "center"}}>
-                    <span style={{fontFamily:"Prata",fontSize:"33px",fontWeight:400,lineHeight:"38px",margin:"25px 0px"}}>Professional makeup by Gowdhami</span>
+                <Grid container sx={{justifyContent: "center",fontSize:{xs:"1.5rem",md:"33px"}}}>
+                    <span style={{fontFamily:"Prata",fontSize:"inherit",fontWeight:400,lineHeight:"38px",margin:"25px 0px"}}>Professional makeup by Gowdhami</span>
                 </Grid>
                 <Grid container >
                     <span style={{fontSize:"13px",fontWeight:400,lineHeight:"20px"}}>Gowdhami is one of the most prominent makeup artist in Chennai with more than 10 years of experience in Fine Arts & Fashion, She can give you a look ''You Truly Deserve" .</span>

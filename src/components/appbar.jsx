@@ -63,7 +63,7 @@ function ResponsiveAppBar(props) {
       <Container maxWidth="xl">
         <Toolbar disableGutters style={{ justifyContent: "center" }}>
           <Grid
-            Container
+            container
             style={{
               justifyContent: "space-between",
               display: "flex",

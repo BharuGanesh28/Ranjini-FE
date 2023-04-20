@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 const prices = [
   { name: "Bridal Makeup", price: "28,000" },
   {
-    name: "Cocktail/Mehendi Makeup",
+    name: "Mehendi Makeup",
     price: "23,000",
   },
   { name: "Party Makeup", price: "12,000" },
@@ -10,13 +10,11 @@ const prices = [
 const Pricing = () => {
   return (
     <Grid container style={{ backgroundColor: "#f140721f" }}>
-      <Grid container style={{ display: "flex", justifyContent: "center" }} sx={{color:"secondary.main"}}>
+      <Grid container style={{ display: "flex", justifyContent: "center" }} sx={{color:"secondary.main",marginTop:{xs:"45px",md:"60px"},marginBottom:{xs:"35px"}}}>
         <span
           style={{
             fontFamily: "Kaushan Script",
-            fontSize: "48px",
-            
-            marginTop: "80px",
+            fontSize: "48px"
           }}
         >
           Plans & Pricing{" "}
@@ -28,7 +26,6 @@ const Pricing = () => {
             fontFamily: "Prata",
             fontSize: "48px",
             color: "#141414",
-            marginTop: "-21px",
           }}
         >
           Choose your makeup plan
@@ -37,10 +34,9 @@ const Pricing = () => {
       <Grid container style={{ justifyContent: "center" }}>
         <span
           style={{
-            fontFamily: "Ubuntu",
-            fontSize: "16px",
+            fontSize: "1rem",
             color: "#141414",
-            marginTop: "15px",
+            marginTop: "25px",
           }}
         >
           With Gowdhami, You’ll not get only your Dream Makeup services but also
@@ -54,11 +50,12 @@ const Pricing = () => {
           justifyContent: "space-evenly",
           marginTop: "45px",
           height: "100%",
-          marginBottom:'80px'
+          marginBottom:'35px'
         }}
       >
-        {prices.map((val) => (
+        {prices.map((val,idx) => (
           <Grid
+          key={idx}
             item
             xs={10} md={5} lg={3} 
             style={{ 
@@ -71,7 +68,7 @@ const Pricing = () => {
                 fontFamily: "Prata",
                 margin: "0",
                 paddingTop: "60px",
-                height:'80px',
+                height:'70px',
                 
               }}
             >
@@ -81,9 +78,8 @@ const Pricing = () => {
               style={{
                 color: "#141414",
                 fontFamily: "Prata",
-                fontSize: "60px",
+                fontSize: "50px",
                 margin: "0",
-                paddingTop: "20px",
                 paddingBottom:'40px'
               }}
             >
