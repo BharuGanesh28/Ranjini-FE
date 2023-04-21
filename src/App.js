@@ -15,7 +15,6 @@ function App() {
       <Pricing/>
       <Review/>
       <Footer/>
-      <li></li>
     </div>
   );
 }

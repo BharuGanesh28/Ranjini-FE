@@ -13,6 +13,7 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Rating from '@mui/material/Rating';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { useInView, motion } from "framer-motion";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -205,14 +206,14 @@ const Review = () => {
                             <Checkbox color={"secondary"} style={{ paddingLeft: "0px" }} onClick={(e) => handleCheckBox(e, val.id)} />
                             <span>{val.id}</span>
                             <GradeIcon style={{ fontSize: "17px", marginTop: "2px", marginLeft: "5px" }} />
-                            <LinearProgress color={"review" + val.id} style={{ width: "60%", height: "12px", borderRadius: "5px", marginLeft: "10px", marginRight: "13px", marginTop: "4px" }} variant="determinate" value={val.progress} />
+                            <LinearProgress color={"review" + val.id} style={{ width: "58%", height: "12px", borderRadius: "5px", marginLeft: "10px", marginRight: "13px", marginTop: "4px" }} variant="determinate" value={val.progress} />
                             <span style={{ display: "flex", flex: 1, justifyContent: "flex-end" }}>{val.total} reviews</span>
                         </Grid>
                         <Grid container sx={{ alignItems: "center",display:{md:"none",xs:"flex"} }} key={idx+"second"}>
                         <Checkbox color={"secondary"} style={{ paddingLeft: "0px" }} onClick={(e) => handleCheckBox(e, val.id)} />
                         <span>{val.id}</span>
                         <GradeIcon style={{ fontSize: "17px", marginTop: "2px", marginLeft: "5px" }} />
-                        <LinearProgress color={"review" + val.id} style={{ width: "60%", height: "12px", borderRadius: "5px", marginLeft: "10px", marginRight: "13px", marginTop: "4px" }} variant="determinate" value={val.progress} />
+                        <LinearProgress color={"review" + val.id} style={{ width: "58%", height: "12px", borderRadius: "5px", marginLeft: "10px", marginRight: "13px", marginTop: "4px" }} variant="determinate" value={val.progress} />
                         <span style={{ display: "flex", flex: 1, justifyContent: "flex-end" }}>{val.total} </span>
                     </Grid>
                     </React.Fragment>
@@ -250,6 +251,11 @@ const Review = () => {
             </Grid>
             {reviews.slice(0, numReviewsDisplayed).map((val,idx) =>
                 <Grid container key={idx} style={{ border: "1px solid lightgrey", margin: "10px 0px", padding: "20px", borderRadius: "10px" }} >
+                    <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 0, scale: 0.5 }}
+          transition={{ duration: 1 }}
+        >
                     <Grid container style={{ marginBottom: "10px" }} >
                         <Grid item><AccountCircleIcon style={{ color: "lightgrey", fontSize: "60px" }} /></Grid>
                         <Grid item style={{ margin: "8px 10px" }}>
@@ -266,11 +272,12 @@ const Review = () => {
                         </Grid>
                     </Grid>
                     <Grid container style={{ textAlign: "start" }}>{val.reviewMessage}</Grid>
+                    </motion.div>
                 </Grid>
             )}
             {/* Show the "see more" button if there are more reviews to display */}
             <Grid key="seemore" container style={{ justifyContent: "center", marginTop: "15px" }}>{numReviewsDisplayed < reviews.length && (
-                <Button color="secondary" onClick={handleSeeMore}>See more <ArrowDownwardIcon style={{ fontSize: "18px", margin: "0px 5px" }} /></Button>
+                <Button color="secondary" className="jumping-button"  onClick={handleSeeMore}>See more <ArrowDownwardIcon style={{ fontSize: "18px", margin: "0px 5px" }} /></Button>
             )}
             </Grid>
             <Grid key="reviewBox" item xs={12} md={6} sx={{display:{xs:"flex",md:"none"}}} style={{marginTop:"15px",border: "1px solid lightgrey", padding: "20px", borderRadius: "10px", flexDirection: "column", justifyContent: "space-between" }}>

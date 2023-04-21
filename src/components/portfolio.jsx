@@ -1,46 +1,56 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import Button from '@mui/material/Button';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { motion } from "framer-motion";
 
 var displayRange = 8;
 export default function Portfolio() {
   const [numPictureDisplayed, setNumPictureDisplayed] = useState(8);
-    // Show the next 5 Photos when the "see more" button is clicked
-    const handleSeeMore = () => {
-        setNumPictureDisplayed(numPictureDisplayed + displayRange);
-    };
-    // Update the number of Photos displayed based on screen size
-    useEffect(() => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth < 600) {
-        displayRange = 4;
-          setNumPictureDisplayed(4);
-      }
-      else if (screenWidth < 1200) {
-        displayRange = 6;
-          setNumPictureDisplayed(6);
-      }else {
-        displayRange = 8;
-          setNumPictureDisplayed(8);
-      }
+  // Show the next 5 Photos when the "see more" button is clicked
+  const handleSeeMore = () => {
+    setNumPictureDisplayed(numPictureDisplayed + displayRange);
+  };
+  // Update the number of Photos displayed based on screen size
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 600) {
+      displayRange = 4;
+      setNumPictureDisplayed(4);
+    }
+    else if (screenWidth < 1200) {
+      displayRange = 6;
+      setNumPictureDisplayed(6);
+    } else {
+      displayRange = 8;
+      setNumPictureDisplayed(8);
+    }
   }, []);
   return (
-    <Grid container sx={{ padding: {xs:"10vw 10vw",md:"2vw 7vw"} }} id="PORTFOLIO">
-        <Grid className="title" sx={{marginBottom:{xs:"5vh",md:"5vh"}}}>MAKEUP ARTIST PORTFOLIO</Grid>
-        <Grid container sx={{ width: "100vw" }} spacing={6}>
+    <Grid container sx={{ padding: { xs: "10vw 10vw", md: "2vw 7vw" } }} id="PORTFOLIO">
+      <Grid className="title" sx={{ marginBottom: { xs: "5vh", md: "5vh" } }}>MAKEUP ARTIST PORTFOLIO</Grid>
+      <Grid container sx={{ width: "100vw" }} spacing={6} >
         {itemData.slice(0, numPictureDisplayed).map((item) => (
-          <Grid item key={item.img} xs={12} sm={6} md={4} lg={3}>
-            <img className="portfolioimg" src={`${item.img}`} />
+
+          <Grid item key={item.img} xs={12} sm={6} md={4} lg={3} >
+            <motion.div
+              whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.1 }}              
+              animate={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1 }}
+            >
+              <img className="portfolioimg " src={`${item.img}`} />
+            </motion.div>
           </Grid >
+
         ))}
-        </Grid>
-        
-        {/* Show the "see more" button if there are more reviews to display */}
-        <Grid container style={{justifyContent:"center",marginTop:"15px"}}>{numPictureDisplayed < itemData.length && (
-                <Button color="secondary"   onClick={handleSeeMore}>See more <ArrowDownwardIcon style={{fontSize: "18px",margin: "0px 5px"}}/></Button>
-            )}
-            </Grid>
+      </Grid>
+
+      {/* Show the "see more" button if there are more reviews to display */}
+      <Grid container style={{ justifyContent: "center", marginTop: "15px" }}>{numPictureDisplayed < itemData.length && (
+        <Button color="secondary" className="jumping-button" onClick={handleSeeMore}>See more <ArrowDownwardIcon style={{ fontSize: "18px", margin: "0px 5px" }} /></Button>
+      )}
+      </Grid>
     </Grid>
   );
 }
@@ -78,10 +88,10 @@ const itemData = [
   },
   {
     img: "https://images.pexels.com/photos/13162813/pexels-photo-13162813.jpeg?auto=compress&cs=tinysrgb&w=600",
-    
+
   },
   {
     img: "https://images.pexels.com/photos/15698711/pexels-photo-15698711.jpeg?auto=compress&cs=tinysrgb&w=600",
-    
+
   },
 ];
