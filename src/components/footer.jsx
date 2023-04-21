@@ -13,9 +13,8 @@ return(
 <Grid container style={{
     backgroundColor:'#3a3a3a',
     display:'flex',
-    justifyContent:'space-evenly',
-    padding:'30px'    
-}} sx={{color:"primary.main",alignItems:{xs:"center"}}}  id="CONTACT">
+    justifyContent:'space-evenly',padding:'30px'
+    }} sx={{color:"primary.main",alignItems:{xs:"center"}}}  id="CONTACT">
     <Grid item xs={10} sm={5} md={2}  style={{justifyContent:'centre'}}> 
     <Grid container sx={{color:"primary.main"}} style={{display:'flex',justifyContent:'space-evenly'}} >
         <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><FacebookIcon/></a></Grid>
