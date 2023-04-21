@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 
 export default function Portfolio() {
   return (
-    <Grid container sx={{ padding: {xs:"10vw 10vw",md:"2vw 7vw"} }}>
+    <Grid container sx={{ padding: {xs:"10vw 10vw",md:"2vw 7vw"} }} id="PORTFOLIO">
         <Grid className="title" sx={{marginBottom:{xs:"5vh",md:"5vh"}}}>MAKEUP ARTIST PORTFOLIO</Grid>
         <Grid container sx={{ width: "100vw" }} spacing={6}>
         {itemData.map((item) => (

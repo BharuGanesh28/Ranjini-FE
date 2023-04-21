@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 const About =()=>{
 
     return(
-        <Grid container  style={{display:"flex",justifyContent:"center",backgroundColor:"#f140721f",alignItems:"center"}}>
+        <Grid container  style={{display:"flex",justifyContent:"center",backgroundColor:"#f140721f",alignItems:"center"}} id="ABOUT">
            {/* small device*/}
            <Grid sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className='imageContainer' item xs={8} md={5} style={{height:"220px",backgroundColor:"white",margin:"50px 25px",marginBottom:"0px",position:"relative",overflow:"hidden"}}>
                 <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg' />
@@ -17,7 +17,7 @@ const About =()=>{
                     <span style={{fontSize:"13px",fontWeight:400,lineHeight:"20px"}}>Gowdhami is one of the most prominent makeup artist in Chennai with more than 10 years of experience in Fine Arts & Fashion, She can give you a look ''You Truly Deserve" .</span>
                 </Grid>
                 <Grid container style={{margin:"30px 0px",justifyContent:"center"}}>
-                    <Button style={{padding: "14px 30px",fontSize: "15px"}}variant="contained" color="secondary">CONTACT</Button>
+                <a href='#CONTACT'> <Button style={{padding: "14px 30px",fontSize: "15px"}}variant="contained" color="secondary">CONTACT</Button></a>
                 </Grid>
             </Grid>            
             {/* medium device*/}
@@ -29,7 +29,7 @@ const About =()=>{
                     <span style={{fontSize:"16px",fontWeight:400,lineHeight:"26px"}}>Gowdhami is one of the most prominent makeup artist in Chennai with more than 10 years of experience in Fine Arts & Fashion, She can give you a look ''You Truly Deserve" .</span>
                 </Grid>
                 <Grid container style={{margin:"50px 0px"}}>
-                    <Button style={{padding: "14px 30px",fontSize: "15px"}}variant="contained" color="secondary">CONTACT</Button>
+                    <a href='#CONTACT'><Button style={{padding: "14px 30px",fontSize: "15px"}}variant="contained" color="secondary">CONTACT</Button></a>
                 </Grid>
             </Grid>
             <Grid sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} className='imageContainer' item xs={12} md={5} style={{height:"500px",backgroundColor:"white",margin:"75px 25px",position:"relative",overflow:"hidden"}}>
