@@ -11,8 +11,8 @@ const About =()=>{
            {/* small device*/}
            <Grid sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className='imageContainer' item xs={8} md={5} style={{height:"220px",margin:"50px 25px",marginBottom:"0px",position:"relative",overflow:"hidden"}}>
            <motion.div
-    animate={isInView  ? { opacity: 1 , scale: [1] } : { opacity: 0, scale: 0 }}
-    transition={{ duration: 3,ease: "easeInOut" }}
+    animate={isInView  ? { opacity: 1 , scale: [0,1] } : { opacity: 0, scale: 0 }}
+    transition={{ duration: 1,ease: "easeInOut" }}
     >
     <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg'/>
     </motion.div>
@@ -20,7 +20,7 @@ const About =()=>{
             <Grid item xs={12} md={5} sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} style={{textAlign:"center",height:"175px",margin:"75px 25px",flexDirection:"column",justifyContent:"center"}}>
                 <Grid container sx={{justifyContent: "center",fontSize:{xs:"1.5rem",md:"33px"}}} >
                 <motion.div
-              animate={isInView  ? { opacity: 1 , scale: [0,1] } : { opacity: 0, scale: 0 }}
+              animate={isInView  ? { opacity: 1 , scale: [0,0,1] } : { opacity: 0, scale: 0 }}
               transition={{ duration: 1,ease: "easeInOut" }}
             >
                     <span style={{fontFamily:"Prata",fontSize:"inherit",fontWeight:400,lineHeight:"38px",margin:"25px 0px"}}>Professional makeup by Gowdhami</span>
@@ -28,7 +28,7 @@ const About =()=>{
                 </Grid>
                 <Grid container >
                 <motion.div
-              animate={isInView  ? { opacity: 1 , scale: [0,0,1] } : { opacity: 0, scale: 0 }}
+              animate={isInView  ? { opacity: 1 , scale: [0,0,0,1] } : { opacity: 0, scale: 0 }}
               transition={{ duration: 1.5,ease: "easeInOut" }}
             >
                     <span style={{fontSize:"13px",fontWeight:400,lineHeight:"20px"}}>Gowdhami is one of the most prominent makeup artist in Chennai with more than 10 years of experience in Fine Arts & Fashion, She can give you a look ''You Truly Deserve" .</span>
@@ -36,7 +36,7 @@ const About =()=>{
                 </Grid>
                 <Grid container style={{margin:"30px 0px",justifyContent:"center"}}>
                 <motion.div
-              animate={isInView  ? { opacity: 1 , scale: [0,0,0,0,1] } : { opacity: 0, scale: 0 }}
+              animate={isInView  ? { opacity: 1 , scale: [0,0,0,0,0,1] } : { opacity: 0, scale: 0 }}
               transition={{ duration: 2,ease: "easeInOut" }}
             >
                 <a href='#CONTACT'> <Button style={{padding: "14px 30px",fontSize: "15px"}}variant="contained" color="secondary">CONTACT</Button></a>
