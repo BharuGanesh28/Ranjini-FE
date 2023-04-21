@@ -9,7 +9,7 @@ const prices = [
 ];
 const Pricing = () => {
   return (
-    <Grid container style={{ backgroundColor: "#f140721f" }}>
+    <Grid container style={{ backgroundColor: "#f140721f" }} id="PRICING">
       <Grid container style={{ display: "flex", justifyContent: "center" }} sx={{color:"secondary.main",marginTop:{xs:"45px",md:"60px"},marginBottom:{xs:"35px"}}}>
         <span
           style={{
