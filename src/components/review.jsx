@@ -184,7 +184,7 @@ const Review = () => {
     }
 
     return (
-        <Grid container sx={{ padding: { xs: "10vw 10vw", md: "2vw 7vw" } }}>
+        <Grid container sx={{ padding: { xs: "10vw 10vw", md: "2vw 7vw" } }} id="REVIEW">
             <Grid className="title" sx={{ marginBottom: { xs: "5vh", md: "5vh" } }}>MAKEUP ARTIST REVIEWS</Grid>
             <Grid container style={{ justifyContent: "space-between", marginBottom: "10px" }}>
                 <Grid item xs={12} md={5} style={{ border: "1px solid lightgrey", padding: "20px", borderRadius: "10px" }}>

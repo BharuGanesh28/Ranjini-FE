@@ -10,7 +10,7 @@ import NearMeIcon from '@mui/icons-material/NearMe';
 
 const Footer=()=>{
 return(
-<Grid container style={{
+<Grid container   style={{
     backgroundColor:'#3a3a3a',
     display:'flex',
     justifyContent:'space-evenly',padding:'30px'

@@ -49,9 +49,9 @@ function ResponsiveAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+          <a href={"#"+item}>  <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
-            </ListItemButton>
+            </ListItemButton> </a>
           </ListItem>
         ))}
       </List>
@@ -59,7 +59,7 @@ function ResponsiveAppBar(props) {
   );
 
   return (
-    <AppBar position="static" style={{boxShadow:"none"}}>
+    <AppBar position="sticky" style={{boxShadow:"none"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters style={{ justifyContent: "center" }}>
           <Grid
@@ -154,14 +154,14 @@ function ResponsiveAppBar(props) {
                 sx={{ flexGrow: 1, display: { xs: "none", md: "flex" ,justifyContent:"flex-end"} }} 
               >
                 {navItems.map((page) => (
-                  <Button
+                 <a href={"#"+page}> <Button
                     key={page}
                     onClick={handleCloseNavMenu}
                      
                     sx={{ my: 2,color:theme.palette.primary.contrastText, display: "block",mx: 3 }}
                   >
                     {page}
-                  </Button>
+                  </Button></a>
                 ))}
               </Box>
             </Grid>
