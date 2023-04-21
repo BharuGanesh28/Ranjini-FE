@@ -142,7 +142,7 @@ const Review = () => {
         var raw = JSON.stringify({
             "userName": reviewerName ? reviewerName : "Anonymous",
             "userImage": null,
-            "reviewStar": reviewStar,
+            "reviewStar": reviewStar?reviewStar:1,
             "reviewMessage": reviewermessage ? reviewermessage : "NA"
         });
 
@@ -224,7 +224,7 @@ const Review = () => {
                     </Grid>
                     <Grid container>
                         {
-                            <Rating onChange={(e) => { setReviewStart(Number(e.target.value)) }} name="size-large" size="large" />
+                            <Rating defaultValue={1} onChange={(e) => { setReviewStart(Number(e.target.value)) }} name="size-large" size="large" />
                         }
                     </Grid>
                     <Grid container>
@@ -256,7 +256,7 @@ const Review = () => {
                             <Grid container>
                                 <Grid item>{val.userName}</Grid>
                                 <Grid item style={{ marginLeft: "5px" }}>
-                                    <Grid style={{ padding: "3px", marginRight: "5px", alignItems: "center", display: "flex", borderRadius: "5px", backgroundColor: theme.palette["review"+val.reviewStar].main, color: theme.palette["review"+val.reviewStar].contrastText }}>
+                                    <Grid style={{ padding: "3px", marginRight: "5px", alignItems: "center", display: "flex", borderRadius: "5px", backgroundColor: theme.palette["review"+val.reviewStar]?theme.palette["review"+val.reviewStar].main:null, color: theme.palette["review"+val.reviewStar]?theme.palette["review"+val.reviewStar].contrastText:null }}>
                                         <GradeIcon style={{ fontSize: "16px" }} />
                                         <span style={{ marginLeft: "5px", fontSize: "12px", marginRight: "3px" }}>{val.reviewStar}</span>
                                     </Grid>
