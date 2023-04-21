@@ -11,7 +11,7 @@ const About =()=>{
            {/* small device*/}
            <Grid sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className='imageContainer' item xs={8} md={5} style={{height:"220px",margin:"50px 25px",marginBottom:"0px",position:"relative",overflow:"hidden"}}>
            <motion.div
-    animate={isInView  ? { opacity: 1 , scale: [0,0,0,1] } : { opacity: 0, scale: 0 }}
+    animate={isInView  ? { opacity: 1 , scale: [1] } : { opacity: 0, scale: 0 }}
     transition={{ duration: 3,ease: "easeInOut" }}
     >
     <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg'/>
