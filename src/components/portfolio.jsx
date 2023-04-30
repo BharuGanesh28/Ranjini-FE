@@ -87,9 +87,9 @@ const itemData = [
     img: "https://images.pexels.com/photos/15181108/pexels-photo-15181108.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    img: "https://images.pexels.com/photos/13162813/pexels-photo-13162813.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://drive.google.com/uc?id=1JXmni_WoIbiWj2-1R0zb_zT1TyPLJhDQ",
   },
   {
-    img: "https://images.pexels.com/photos/15698711/pexels-photo-15698711.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://drive.google.com/uc?id=1LW7vkY-9wjtH8D-QOPzK3PpGPkv_8euW",
   },
 ];
