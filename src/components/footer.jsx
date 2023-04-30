@@ -45,6 +45,7 @@ return(
         <Grid item  style={{display: "flex",alignItems: "center",marginRight: "10px"}}><PhoneEnabledIcon style={{fontSize:"2rem"}}/></Grid>
         <Grid item ><p style={{margin:'0',fontSize:'15px',fontFamily:'PT Sans',fontWeight:'700'}}>Bookings</p>
         <p style={{margin:'0',fontSize:'14px',fontFamily:'PT Sans',fontWeight:'400'}}>+91-9790771141</p></Grid>
+        
         </motion.div>
     </Grid>
    
@@ -59,6 +60,7 @@ return(
         <Grid item style={{display: "flex",alignItems: "center",marginRight: "10px"}}><MailOutlineIcon style={{fontSize:"2rem"}}/></Grid>
         <Grid item ><p style={{margin:'0',fontSize:'15px',fontFamily:'PT Sans',fontWeight:'700'}}>Send us a Mail</p>
         <p style={{margin:'0',fontSize:'14px',fontFamily:'PT Sans',fontWeight:'400'}}>thamizartistry@gmail.com</p></Grid>
+        
         </motion.div>
     </Grid> 
 
@@ -74,6 +76,7 @@ return(
         <Grid item style={{display: "flex",alignItems: "center",marginRight: "10px"}}><NearMeIcon style={{fontSize:"2rem"}}/></Grid>
         <Grid item ><p style={{margin:'0',fontSize:'15px',fontFamily:'PT Sans',fontWeight:'700'}}>Our Location</p>
         <p style={{margin:'0',fontSize:'14px',fontFamily:'PT Sans',fontWeight:'400'}}>NO.156,Indragandhi Nagar,Kayarambedu.Guduvancherry </p></Grid>
+    
     </motion.div>
     </Grid> 
     
