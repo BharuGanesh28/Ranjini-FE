@@ -88,10 +88,8 @@ const itemData = [
   },
   {
     img: "https://images.pexels.com/photos/13162813/pexels-photo-13162813.jpeg?auto=compress&cs=tinysrgb&w=600",
-
   },
   {
     img: "https://images.pexels.com/photos/15698711/pexels-photo-15698711.jpeg?auto=compress&cs=tinysrgb&w=600",
-
   },
 ];
