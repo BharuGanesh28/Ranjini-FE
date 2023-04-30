@@ -90,6 +90,6 @@ const itemData = [
     img: "https://drive.google.com/uc?id=1JXmni_WoIbiWj2-1R0zb_zT1TyPLJhDQ",
   },
   {
-    img: "https://drive.google.com/uc?id=1LW7vkY-9wjtH8D-QOPzK3PpGPkv_8euW",
+    img: "https://drive.google.com/uc?id=1LW7vkY-9wjtH8D-QOPzK3PpGPkv_8euW", 
   },
 ];
