@@ -1,4 +1,7 @@
 import { Grid } from "@mui/material";
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+
 const prices = [
   { name: "Bridal Makeup", price: "28,000" },
   {
@@ -8,9 +11,15 @@ const prices = [
   { name: "Party Makeup", price: "12,000" },
 ];
 const Pricing = () => {
+  const ref = useRef(null);
+    const isInView = useInView(ref, { once: false });
   return (
-    <Grid container style={{ backgroundColor: "#f140721f" }} id="PRICING">
+    <Grid ref={ref} container style={{ backgroundColor: "#f140721f" }} id="PRICING">
       <Grid container style={{ display: "flex", justifyContent: "center" }} sx={{color:"secondary.main",marginTop:{xs:"45px",md:"60px"},marginBottom:{xs:"35px"}}}>
+      <motion.div
+              animate={isInView  ? { opacity: 1 , scale: [0,1] } : { opacity: 0, scale: 0 }}
+              transition={{ duration: 1,ease: "easeInOut" }}
+            >
         <span
           style={{
             fontFamily: "Kaushan Script",
@@ -19,29 +28,42 @@ const Pricing = () => {
         >
           Plans & Pricing{" "}
         </span>
+        </motion.div>
       </Grid>
       <Grid container style={{ justifyContent: "center" }}>
+      <motion.div
+              animate={isInView  ? { opacity: 1 , scale: [0,0,1] } : { opacity: 0, scale: 0 }}
+              transition={{ duration: 1.5,ease: "easeInOut" }}
+            >
         <span
           style={{
             fontFamily: "Prata",
             fontSize: "48px",
             color: "#141414",
+            textAlign:"center"
           }}
         >
           Choose your makeup plan
         </span>
+        </motion.div>
       </Grid>
       <Grid container style={{ justifyContent: "center" }}>
-        <span
+        
+      <motion.div
+              animate={isInView  ? { opacity: 1 , scale: [0,0,0,0,1] } : { opacity: 0, scale: 0 }}
+              transition={{ duration: 2,ease: "easeInOut" }}
+            ><span
           style={{
             fontSize: "1rem",
             color: "#141414",
             marginTop: "25px",
+            textAlign:"center"
           }}
         >
           With Gowdhami, You’ll not get only your Dream Makeup services but also
           at affordable price.
         </span>
+        </motion.div>
       </Grid>
       <Grid
         container
@@ -54,13 +76,20 @@ const Pricing = () => {
         }}
       >
         {prices.map((val,idx) => (
+          
           <Grid
           key={idx}
             item
             xs={10} md={5} lg={3} 
             style={{ 
-                backgroundColor: "#FFFFFF", height: "80%",marginBottom:'50px' }}
+                backgroundColor: "#FFFFFF", height: "80%",marginBottom:'50px',justifyContent: "center",display: "flex",flexDirection: "column",alignItems: "center" }}
           >
+            <motion.div
+          whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.1 }}              
+          animate={{ opacity: 0, scale: 0.5 }}
+          transition={{ duration: 1 }}
+        >
             <p
               style={{
                 color: "#f14072",
@@ -94,7 +123,8 @@ const Pricing = () => {
                 ₹
               </span>
             </p>
-          </Grid>
+            </motion.div>
+          </Grid>          
         ))}
       </Grid>
     </Grid>

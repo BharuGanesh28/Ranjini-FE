@@ -39,3 +39,36 @@ a{
   text-decoration: none;
   color:inherit;
 }
+
+
+/* animation */
+/* potfolio */
+
+/* jump button */
+.jumping-button {
+  font-size: 16px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: jump 1.4s infinite;
+}
+
+.jumping-button:hover {
+  animation-play-state: paused;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

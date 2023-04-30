@@ -155,7 +155,8 @@ function ResponsiveAppBar(props) {
                 sx={{ flexGrow: 1, display: { xs: "none", md: "flex" ,justifyContent:"flex-end"} }} 
               >
                 {navItems.map((page) => (
-                 <a href={"#"+page}> <Button
+                 <a href={"#"+page}>
+                   <Button
                     key={page}
                     onClick={handleCloseNavMenu}
                      
