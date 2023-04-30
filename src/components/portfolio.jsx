@@ -47,41 +47,41 @@ export default function Portfolio() {
 
 const itemData = [
   {
-    img: "https://images.pexels.com/photos/1446161/pexels-photo-1446161.jpeg?auto=compress&cs=tinysrgb&w=600",
+img:"https://drive.google.com/uc?id=1LlsiJ7N698hXyIVzi2ZPDb9p5ziSg-9J" ,
+ },
+  {
+    img: "https://drive.google.com/uc?id=1Lj6zK_wQXjtGAdLd58QQjlq6SKVutNHH",
   },
   {
-    img: "https://media.istockphoto.com/id/183250844/photo/wedding-ring-henna-hands.jpg?s=612x612&w=0&k=20&c=IGO6rVsYXDz1uBCUDWpGngiBy33EFv7jWtSi6iYWXfw=",
+    img: "https://drive.google.com/uc?id=1Ljj4IPlE_pAxsFgYRnS8AIQrz2pyBhG1",
   },
   {
-    img: "https://images.unsplash.com/flagged/photo-1551854716-8b811be39e7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwYnJpZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    img: "https://drive.google.com/uc?id=1Ln0_bmsjfi-9Dx32XJ2If4AiYLBK9ELV",
   },
   {
-    img: "https://www.theweddingfocus.com/wp-content/uploads/2022/05/getting-ready-bride-face-closeup-look-with-maang-tikka-nath-629x1024.jpg",
+    img: "https://drive.google.com/uc?id=1JYMGpawI04M6SrL7Rrolvuqd2o3XiEq5",
   },
   {
-    img: "https://images.unsplash.com/photo-1594140700520-8afea3283e2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGJyaWRhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    img: "https://drive.google.com/uc?id=1JviY2F4I7HZQahDJ6gPgDKEWquzKlPYK",
   },
   {
-    img: "https://images.unsplash.com/photo-1628917749170-f6747418ffce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxicmlkYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    img: "https://drive.google.com/uc?id=1LZF8ryHeDDbjnpHn7pbS-e9xwJopCCtv",
   },
   {
-    img: "https://images.unsplash.com/photo-1610276347233-2ab70fc71da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGluZGlhbiUyMGJyaWRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: "https://drive.google.com/uc?id=1M0GdphjnSvL-xFELCJJGpbi4ZbhmVxpx",
   },
   {
-    img: "https://media.istockphoto.com/id/172852413/photo/the-beauty-of-the-indian-woman.jpg?s=612x612&w=0&k=20&c=OINaDdVhocyxDaAKDZ-lUIy3W_np4CQD3B39_NyvsDE=",
+    img: "https://drive.google.com/uc?id=1KAsRQ-V5dvqSnURjzn2iLPDdttKrGRNG",
   },
   {
-    img: "https://images.pexels.com/photos/5856078/pexels-photo-5856078.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://drive.google.com/uc?id=1LcsdWxpaGrnBA5cEBDOU1gMJmOB_hN26",
   },
   {
-    img: "https://images.pexels.com/photos/15181108/pexels-photo-15181108.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-  {
-    img: "https://images.pexels.com/photos/13162813/pexels-photo-13162813.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://drive.google.com/uc?id=1JXmni_WoIbiWj2-1R0zb_zT1TyPLJhDQ",
     
   },
   {
-    img: "https://images.pexels.com/photos/15698711/pexels-photo-15698711.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://drive.google.com/uc?id=1LW7vkY-9wjtH8D-QOPzK3PpGPkv_8euW",
     
   },
 ];

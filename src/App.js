@@ -8,6 +8,7 @@ import Pricing from './components/pricing';
 import Footer from './components/footer';
 function App() {
   return (
+  
     <div className="App">
       <ResponsiveAppBar/>
       <About/>
@@ -15,8 +16,8 @@ function App() {
       <Pricing/>
       <Review/>
       <Footer/>
-      <li></li>
     </div>
+    
   );
 }
 

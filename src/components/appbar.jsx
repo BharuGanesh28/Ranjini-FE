@@ -20,6 +20,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Drawer from '@mui/material/Drawer';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
+import image1 from "./img/Screenshot_2023-04-28_154153-removebg-preview.png"
 
 
 
@@ -90,7 +91,7 @@ function ResponsiveAppBar(props) {
                   textDecoration: "none",
                 }}
               >
-                LOGO
+                <img style={{height:'68px'}} src={image1}/>
               </Typography>
             </Grid>
             <Grid
@@ -143,7 +144,7 @@ function ResponsiveAppBar(props) {
                   textDecoration: "none",
                 }}
               >
-                LOGO
+                <img style={{height:'68px'}} src={image1}/>
               </Typography>
             </Grid>
             <Grid
