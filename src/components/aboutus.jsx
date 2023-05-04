@@ -9,12 +9,12 @@ const About =()=>{
     return(
         <Grid ref={ref} container  style={{display:"flex",justifyContent:"center",backgroundColor:"#f140721f",alignItems:"center"}} id="ABOUT">
            {/* small device*/}
-           <Grid sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} className='imageContainer' item xs={8} md={5} style={{height:"220px",margin:"50px 25px",marginBottom:"0px",position:"relative",overflow:"hidden"}}>
-           <motion.div
+           <Grid sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}  item xs={8} md={5} style={{height:"220px",margin:"50px 25px",marginBottom:"0px",position:"relative",overflow:"hidden"}}>
+           <motion.div className='imageContainer' style={{width:"100%"}}
     animate={isInView  ? { opacity: 1 , scale: [0,1] } : { opacity: 0, scale: 0 }}
     transition={{ duration: 1,ease: "easeInOut" }}
     >
-    <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg'/>
+    <img src='https://drive.google.com/uc?id=1LlsiJ7N698hXyIVzi2ZPDb9p5ziSg-9J'/>
     </motion.div>
             </Grid>
             <Grid item xs={12} md={5} sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }} style={{textAlign:"center",height:"175px",margin:"75px 25px",flexDirection:"column",justifyContent:"center"}}>
@@ -67,12 +67,12 @@ const About =()=>{
                 </motion.div></Grid>
             </Grid>
             
-            <Grid sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} className='imageContainer' item xs={12} md={5} style={{height:"500px",margin:"75px 25px",position:"relative",overflow:"hidden"}}>
-            <motion.div
+            <Grid sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}  item xs={12} md={5} style={{height:"500px",margin:"75px 25px",position:"relative",overflow:"hidden"}}>
+            <motion.div className='imageContainerLg' style={{width:"100%"}}
     animate={isInView  ? { opacity: 1 , scale: [0,0,0,1] } : { opacity: 0, scale: 0 }}
     transition={{ duration: 3,ease: "easeInOut" }}
     >
-    <img src='https://i.pinimg.com/originals/9e/a9/06/9ea9067642b36ecd117eb7ee3cbc78c3.jpg'/>
+    <img src='https://drive.google.com/uc?id=1LlsiJ7N698hXyIVzi2ZPDb9p5ziSg-9J'/>
     </motion.div>
             </Grid>
         </Grid>

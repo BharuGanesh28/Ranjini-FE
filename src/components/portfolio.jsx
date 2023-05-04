@@ -66,7 +66,7 @@ img:"https://drive.google.com/uc?id=1LlsiJ7N698hXyIVzi2ZPDb9p5ziSg-9J" ,
     img: "https://drive.google.com/uc?id=1Ljj4IPlE_pAxsFgYRnS8AIQrz2pyBhG1",
   },
   {
-    img: "https://drive.google.com/uc?id=1Ln0_bmsjfi-9Dx32XJ2If4AiYLBK9ELV",
+    img: "https://drive.google.com/uc?id=1LtslXmO7va0SJxHzkKR4E8Dm61m1NAVK",
   },
   {
     img: "https://drive.google.com/uc?id=1JYMGpawI04M6SrL7Rrolvuqd2o3XiEq5",
