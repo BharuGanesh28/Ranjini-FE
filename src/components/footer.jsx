@@ -24,12 +24,12 @@ return(
           animate={{ opacity: 0, scale: 0.5 }}
           transition={{ duration: 1 }}
         >
-    <Grid container sx={{color:"primary.main"}} style={{display:'flex',justifyContent:'space-evenly'}} >
-        <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><FacebookIcon/></a></Grid>
-        <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><InstagramIcon /></a></Grid>
-        <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><YouTubeIcon /></a></Grid>
+    <Grid container sx={{color:"primary.main"}} style={{display:'flex',justifyContent:'space-evenly',}} >
+        {/*<Grid item ><a  style={{color:"inherit"}} href="" target="blank"><FacebookIcon/></a></Grid>*/}
+        <Grid item ><a  style={{color:"inherit",display:"flex"}} href="https://www.instagram.com/thamiz_artistry/?igshid=YmMyMTA2M2Y%3D" target="blank"><InstagramIcon style={{paddingRight:'6px'}} /><span>Instagram</span></a></Grid>
+        {/*<Grid item ><a  style={{color:"inherit"}} href="" target="blank"><YouTubeIcon /></a></Grid>
         <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><TwitterIcon/></a></Grid>
-        <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><LinkedInIcon/></a></Grid>
+  <Grid item ><a  style={{color:"inherit"}} href="" target="blank"><LinkedInIcon/></a></Grid>*/}
     </Grid>
     </motion.div>
     </Grid>
